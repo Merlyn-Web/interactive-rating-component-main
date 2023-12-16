@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+}
+
+body {
+    background-color: hsl(216, 12%, 8%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+/*1e menu an*/
+#container {
+    width: 450px;
+    height: 450px;
+    border-radius: 40px;
+    padding: 40px;
+    background-color: hsl(213, 19%, 18%);
+}
+
+.icon-star {
+    width: 60px;
+    background-color: hsla(210, 2%, 45%, 0.384);
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.titre {
+    color: hsl(0, 0%, 100%);
+    margin-top: 30px;
+}
+
+.texte {
+    color: hsl(217, 12%, 63%);
+    margin-top: 15px;
+    line-height: 25px;
+}
+
+.les-buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.star {
+    border: none;
+    background-color: hsla(210, 2%, 45%, 0.384);
+    color: hsl(217, 12%, 63%);
+    width: 20px;
+    height: 20px;
+    padding: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.star:hover {
+    background-color: hsl(216, 12%, 54%);
+    color: hsl(0, 0%, 100%);
+    transition: 1s;
+}
+
+.star:focus {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    transition: 1s;
+}
+
+#submit {
+    margin-top: 30px;
+    width: 100%;
+    height: 50px;
+    border-radius: 40px;
+    border: none;
+    background-color: hsl(25, 97%, 53%);
+    font-size: 25px;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+#submit:focus {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+
+/*lew klike sou boutton submit lan 1e mennu an pap afiche*/
+.inactive {
+    display: none;
+}
+
+
+/*section2 for thank | sa se 2e menu an */
+.container2 {
+    width: 450px;
+    height: 450px;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 40px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.texte1 {
+    color: hsl(25, 97%, 53%);
+    background-color: hsla(210, 2%, 45%, 0.384);
+    padding: 8px;
+    border-radius: 20px;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.titre2 {
+    color: hsl(0, 0%, 100%);
+    margin-top: 50px;
+    font-size: 40px;
+}
+
+.texte2 {
+    color: hsl(217, 12%, 63%);
+    margin-top: 15px;
+    line-height: 30px;
+    font-size: 19px;
+    text-align: center;
+}
+
+/*lew poko klike sou boutton submit lan 2e menu an pap afiche*/
+.container2 {
+    display: none;
+}
+
+/*lew klike sou boutton submit lan 2e menu an ap afiche*/
+.container2aff {
+    display: flex;
+}
+
+
+/*Footer a*/
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    margin-top: 30px;
+}
+
+.attribution a {
+    color: hsl(25, 97%, 53%);
+}
+
+
+
+@media screen and (max-width: 490px) {
+    #container {
+        width: 400px;
+    }
+
+    .container2 {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    #container {
+        width: 350px;
+        height: 380px;
+        padding: 30px;
+    }
+
+    .icon-star {
+        width: 40px;
+        padding: 10px;
+    }
+
+    .titre {
+        margin-top: 20px;
+    }
+
+    .texte {
+        margin-top: 10px;
+        line-height: 20px;
+        font-size: 13px;
+    }
+
+    #submit {
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .star {
+        width: 15px;
+        height: 15px;
+        padding: 20px;
+        font-size: 15px;
+    }
+
+
+    /* menu2 */
+    .container2 {
+        width: 350px;
+        height: 380px;
+        padding: 30px;
+    }
+
+    .titre2 {
+        margin-top: 20px;
+        font-size: 30px;
+    }
+
+    .texte1 {
+        font-size: 15px;
+    }
+
+    .texte2 {
+        margin-top: 10px;
+        line-height: 20px;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+
+    #container,
+    .container2 {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    #container,
+    .container2 {
+        width: 280px;
+        height: 350px;
+        padding: 20px;
+    }
+
+    .titre,
+    .titre2 {
+        font-size: 25px;
+    }
+
+    .texte1,
+    .texte2 {
+        font-size: 8px;
+    }
+
+    #submit {
+        height: 30px;
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="./script/script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@600&family=Overpass:wght@400;700&family=Poppins:wght@700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!--1e menu an li la pou moun nan chwazi note li vle bey lan -->
+  <div id="container">
+    <img class="icon-star" src="./images/icon-star.svg">
+
+    <h1 class="titre">How did we do?</h1>
+    <p class="texte">Please let us know how we did with your support request. All feedback is appreciated to help us
+      improve our offering!</p>
+
+    <div class="les-buttons">
+      <button class="star">1</button>
+      <button class="star">2</button>
+      <button class="star">3</button>
+      <button class="star">4</button>
+      <button class="star">5</button>
+    </div>
+
+    <!--se sa boutton ki pemet fe interaksyon ant premye ak dezyem menu an-->
+    <button id="submit" onclick="remove()">SUBMIT</button>
+  </div>
+
+
+  <!--2e menu an ki la pou remerciment et note moun nan sou 5-->
+  <div id="containeraff" class="container2">
+    <img src="./images/illustration-thank-you.svg">
+    <p class="texte1">You selected <span id="currentrating"></span> out of 5</p>
+
+    <h3 class="titre2">Thank you!</h3>
+    <p class="texte2">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate
+      to get in touch!</p>
+  </div>
+
+  <!--Footer a-->
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://api.whatsapp.com/send/?phone=50944471926&text&type=phone_number&app_absent=0">David Frantz
+      Merlyn</a>.
+  </div>
+</body>
+
+</html>
